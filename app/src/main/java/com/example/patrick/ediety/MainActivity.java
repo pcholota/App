@@ -13,5 +13,7 @@ public class MainActivity extends AppCompatActivity {
         //Test wstawienia do Gita
 
         //Test kolejnego pusha
+        
+        //Ostatni test
     }
 }
