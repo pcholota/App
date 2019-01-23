@@ -4,12 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-
+    tools:context=".RegistrationActivity">
 
     <EditText
-        android:id="@+id/etEmailLogin"
+        android:id="@+id/etEmail"
         android:layout_width="288dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -23,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etPasswordLogin"
+        android:id="@+id/etPassword"
         android:layout_width="289dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -35,32 +33,32 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEmailLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
     <Button
-        android:id="@+id/btnLogIn"
+        android:id="@+id/btnRegistration"
         android:layout_width="294dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="160dp"
-        android:text="Zaloguj"
+        android:text="Rejestruj"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPasswordLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
     <TextView
-        android:id="@+id/tvNoAccount"
+        android:id="@+id/tvExistAccount"
         android:layout_width="match_parent"
         android:layout_height="261dp"
         android:layout_marginTop="8dp"
-        android:text="Nie masz konta? Zarejestruj się!"
+        android:text="Masz konto? Zaloguj się!"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogIn"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistration"
         tools:layout_editor_absoluteX="0dp" />
 
     <ProgressBar
-        android:id="@+id/progressBarLogin"
+        android:id="@+id/progressBar"
         android:layout_width="wrap_content"
         android:layout_height="18dp"
         android:layout_centerHorizontal="true"
@@ -71,9 +69,9 @@
         android:minHeight="50dp"
         android:minWidth="50dp"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/btnLogIn"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistration"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPasswordLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
 </android.support.constraint.ConstraintLayout>
